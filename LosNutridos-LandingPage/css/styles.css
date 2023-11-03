@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav{
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #808080;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+li a:hover{
+    background: #5499ad;
+    color: #ffffff;
+    transition: 0.5s;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+section.banner{
+    background: linear-gradient(to left, rgb(255 255 255), rgb(255 255 255));
+    padding: 3rem 0;
+}
+
+.containerB{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.col1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBanner{
+    width: 100%;
+    border-radius: 100px;
+}
+.imgBannerIcon{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+.imgBannerProductInfo{
+    width: 15%;
+}
+.col2{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 2rem;
+    color: #2c9ccc;
+}
+#txtBannet{
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+#txtBannet2{
+    color: #86DC3D;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+#txtBannetIcon{
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: left;
+}
+.btnBanner{
+    background: #8b5ce2;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+
+}
+
+/*SECCIÓN SERVICIOS*/
+.services{
+    padding: 3rem 0;
+}
+.subServicios{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #4c4c4c;
+}
+.containerS{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
+.boxS{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 /6%);
+}
+.boxS img{
+    width: 100px;
+}
+h3{
+    color: #4c4c4c;
+    margin: 10px 0;
+}
+.boxS p{
+    text-align: center;
+}
+
+/*SECCIÓN PORTAFOLIO*/
+.portafolio{
+    padding: 3rem 0;
+}
+.subportafolio{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #4c4c4c;
+}
+.containerP{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
+.boxP{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 /6%);
+}
+.boxP img{
+    width: 100px;
+}
+h3{
+    color: #4c4c4c;
+    margin: 10px 0;
+}
+.boxP p{
+    text-align: center;
+}
+
+/*Pie de Pagina - Footer*/
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
