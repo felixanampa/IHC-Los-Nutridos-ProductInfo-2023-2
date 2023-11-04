@@ -1,27 +1,15 @@
-const banner = document.querySelector("#banner");
-const services = document.querySelector("#services");
-const portafolio = document.querySelector("#portafolio");
-
-/*Menu Inicio(Banner)*/
-services.addEventListener("click", (s) =>{
-    s.preventDefault();
-
-    const sectionI = document.querySelector(".banner");
-    sectionI.scrollIntoView({behavior:"smooth"});
-})
-
-/*Menu Servicios*/
-services.addEventListener("click", (s) =>{
-    s.preventDefault();
-
-    const sectionS = document.querySelector(".services");
-    sectionS.scrollIntoView({behavior:"smooth"});
-})
-
-/*Menu Portafolio*/
-portafolio.addEventListener("click", (p) =>{
-    p.preventDefault();
-
-    const sectionP = document.querySelector(".portafolio");
-    sectionP.scrollIntoView({behavior:"smooth"});
-})
+const enlaces = document.querySelectorAll("nav a");
+const secciones = document.querySelectorAll("section");
+enlaces.forEach(enlace => {
+    enlace.addEventListener("click", function(e) {
+        e.preventDefault(); 
+        const href = this.getAttribute("href");
+        secciones.forEach(seccion => {
+            seccion.style.display = "none";
+        });
+        const seccionMostrar = document.querySelector(href);
+        if (seccionMostrar) {
+            seccionMostrar.style.display = "block";
+        }
+    });
+});

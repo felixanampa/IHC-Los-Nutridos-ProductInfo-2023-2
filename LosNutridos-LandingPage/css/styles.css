@@ -1,33 +1,58 @@
-*{
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800";
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+}
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: "Montserrat";
 }
 
-header{
+header {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
-nav{
+
+nav {
+    display: flex;
     background: #ffffff;
     height: 80px;
     width: 100%;
 }
 
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+nav ul {
+    display: flex;
+    flex-basis: 100%;
 }
 
-nav ul li a{
+nav ul li {
+    line-height: 80px;
+    text-align: center;
+    flex-basis: inherit;
+}
+
+nav ul li a {
     color: #808080;
     font-size: 18px;
     padding: 7px 13px;
@@ -35,102 +60,127 @@ nav ul li a{
     text-transform: capitalize;
 }
 
-li a:hover{
+li a:hover {
     background: #5499ad;
     color: #ffffff;
     transition: 0.5s;
+    padding: 20px;
     border-radius: 25px;
     text-decoration: none;
 }
 
-section.banner{
+section.banner {
     background: linear-gradient(to left, rgb(255 255 255), rgb(255 255 255));
     padding: 3rem 0;
 }
 
-.containerB{
-    width: 90%;
+.containerB {
+    width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 2rem;
 }
 
-.col1{
+.col1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.imgBanner{
+.imgBanner {
     width: 100%;
-    border-radius: 100px;
+    margin-top: 20px;
+    border-radius: 150px;
 }
-.imgBannerIcon{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
+
+.imgBannerIcon1 {
+    width: 60px;
 }
-.imgBannerProductInfo{
-    width: 15%;
+
+.imgBannerIcon2 {
+    width: 55px;
 }
-.col2{
+
+.imgBannerIcon3 {
+    width: 60px;
+}
+
+.imgBannerProductInfo {
+    margin-right: 25px;
+}
+
+.imgContenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgPeru {
+    max-width: 75%;
+}
+
+.col2 {
     padding: 1rem 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-h1{
-    font-size: 2rem;
-    color: #2c9ccc;
+h1 {
+    font-size: 2.5rem;
+    color: #325581;
 }
-#txtBannet{
+
+#txtBannet {
     margin: 2rem 0;
     font-size: 1.3rem;
     line-height: 2rem;
     text-align: justify;
 }
-#txtBannet2{
-    color: #86DC3D;
+
+#txtBannet2 {
+    color: #71cc67;
     margin: 2rem 0;
-    font-size: 1.3rem;
-    line-height: 2rem;
-    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
-#txtBannetIcon{
+
+#txtBannetIcon {
     margin: 1.5rem 0;
     font-size: 1rem;
     line-height: 1rem;
     text-align: left;
 }
-.btnBanner{
-    background: #8b5ce2;
+
+.btnBanner {
+    background: #8355f7;
     color: #fff;
     padding: 20px 20px;
     border-radius: 15px;
     text-decoration: none;
-
 }
 
 /*SECCIÓN SERVICIOS*/
-.services{
+.services {
+    display: none;
     padding: 3rem 0;
 }
-.subServicios{
+
+.subServicios {
     text-align: center;
     padding-bottom: 2rem;
     color: #4c4c4c;
 }
-.containerS{
+
+.containerS {
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-gap: 2rem;
 }
-.boxS{
+
+.boxS {
     padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
@@ -138,34 +188,41 @@ h1{
     justify-content: center;
     box-shadow: 0px 0px 55px 5px rgb(0 0 0 /6%);
 }
-.boxS img{
+
+.boxS img {
     width: 100px;
 }
-h3{
+
+h3 {
     color: #4c4c4c;
     margin: 10px 0;
 }
-.boxS p{
+
+.boxS p {
     text-align: center;
 }
 
 /*SECCIÓN PORTAFOLIO*/
-.portafolio{
+.portafolio {
+    display: none;
     padding: 3rem 0;
 }
-.subportafolio{
+
+.subportafolio {
     text-align: center;
     padding-bottom: 2rem;
     color: #4c4c4c;
 }
-.containerP{
+
+.containerP {
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-gap: 2rem;
 }
-.boxP{
+
+.boxP {
     padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
@@ -173,19 +230,22 @@ h3{
     justify-content: center;
     box-shadow: 0px 0px 55px 5px rgb(0 0 0 /6%);
 }
-.boxP img{
+
+.boxP img {
     width: 100px;
 }
-h3{
+
+h3 {
     color: #4c4c4c;
     margin: 10px 0;
 }
-.boxP p{
+
+.boxP p {
     text-align: center;
 }
 
 /*Pie de Pagina - Footer*/
-footer{
+footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -193,3 +253,25 @@ footer{
     text-align: center;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 70px);
+}
+
+.grid-item {
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+}
+
+#inicioSection{
+    display: flex;
+    flex-basis: 100%;
+}

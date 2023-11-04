@@ -4,57 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProductInfo</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">.
 </head>
 <body>
     <header>
         <nav>
             <img src="img/ProductInfo-logo.png" class="imgBannerProductInfo" alt="">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#" id="services">Servicios</a></li>
-                <li><a href="#" id="nosotros">Nosotros</a></li>
-                <li><a href="#" id="aliados">Aliados</a></li>
-                <li><a href="#" id="portafolio">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#" id="ingresar">Ingresar</a></li>
-                <li><a href="#" id="registrarse">Registrarse</a></li>
+            <ul id="menu">
+                <li><a href="#inicioSection">Inicio</a></li>
+                <li><a href="#servicesSection">Servicios</a></li>
+                <li><a href="#portafolioSection">Nosotros</a></li>
+                <li><a href="#portafolioSection">Aliados</a></li>
+                <li><a href="#portafolioSection">Contacto</a></li>
+                <div class="imgContenedor">
+                    <img src="img/ic-peru.png" class="imgPeru">
+                </div>
+                <li><a href="#portafolioSection">Ingresar</a></li>
+                <li><a href="#portafolioSection">Registrarse</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!--INICIO-->
-        <section class="banner">
+        <section id="inicioSection">
             <div class="containerB row">
-                <div class="boxB col1-md-5 col-12">
-                    <img src="img/bannerHombreCompras.jpg" class="imgBanner" alt="">
-                </div>
                 <div class="boxB col2">
                     <h1>Asistencia Informativa para tu salud</h1>
                     <p id="txtBannet2">
                         Cuidados y recomendación al alcance de tu mano
                     </p>
                     <h1>Beneficios</h1>
-                    <p id="txtBannetIcon">
-                        <img src="img/icon1_24h.png" class="imgBannerIcon" alt="">
-                        Disponibilidad las 24 horas</p>
-                    
-                    <p id="txtBannetIcon">
-                        <img src="img/icon2_bell.png" class="imgBannerIcon" alt="">
-                        Alertas de control de salud</p>
-                    
-                    <p id="txtBannetIcon">
-                        <img src="img/icon3_pc.png" class="imgBannerIcon" alt="">
-                        Monitoreo virtual multiplataforma</p>
-                    <div>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="img/icon1_24h.png" class="imgBannerIcon1" alt="">
+                        </div>
+                        <div class="grid-item">
+                            <img src="img/icon2_bell.png" class="imgBannerIcon2" alt="">
+                        </div>
+                        <div class="grid-item">
+                            <img src="img/icon3_pc.png" class="imgBannerIcon3" alt="">
+                        </div>
+                        <div class="grid-item">
+                            Disponibilidad las 24 horas
+                        </div>
+                        <div class="grid-item">
+                            Alertas de control de salud
+                        </div>
+                        <div class="grid-item">
+                            Monitoreo virtual multiplataforma
+                        </div>
+                    </div>
+                    <div class="btnContainer">
                         <a href="#" class="btnBanner">Mejorar estado de salud</a>
                         <a href="#" class="btnBanner">Cuidar de mi estado de salud</a>
                     </div>
                 </div>
+                <div class="boxB col1-md-5 col-12">
+                    <img src="img/bannerHombreCompras.jpg" class="imgBanner" alt="">
+                </div>
             </div>
         </section>
         <!--SERVICIOS-->
-        <section class="services">
+        <section id="servicesSection" class="services">
             <div class="subServicios">
                 <h2>Nuestros Servicios</h2>
                 <p>
@@ -85,9 +96,8 @@
                 </div>
             </div>
         </section>
-
         <!--ACERCA DE-->
-        <section class="portafolio">
+        <section id="portafolioSection" class="portafolio">
             <div class="subportafolio">
                 <h2>Acerca de ProductInfo</h2>
                 <p>
@@ -118,11 +128,8 @@
                 <br>
                 Startup. Los Nutridos
             </small>
-
         </div>
     </footer>
-
     <script src="js/menu.js"></script>
-    
 </body>
 </html>
