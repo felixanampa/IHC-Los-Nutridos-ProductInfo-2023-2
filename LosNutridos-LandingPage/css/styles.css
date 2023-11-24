@@ -173,7 +173,7 @@ h1 {
 }
 
 .subServicios h1 {
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .containerS {
@@ -203,7 +203,7 @@ h3 {
 }
 
 .boxS p {
-    text-align: center;
+    text-align: justify;
 }
 
 /*SECCIÓN PORTAFOLIO*/
@@ -219,7 +219,7 @@ h3 {
 }
 
 .subportafolio h1 {
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .containerP {
@@ -239,6 +239,10 @@ h3 {
     box-shadow: 0px 0px 55px 5px rgb(0 0 0 /6%);
 }
 
+.boxP p {
+    text-align: justify;
+}
+
 .boxP img {
     width: 100px;
 }
@@ -246,10 +250,6 @@ h3 {
 h3 {
     color: #4c4c4c;
     margin: 10px 0;
-}
-
-.boxP p {
-    text-align: center;
 }
 
 /*Pie de Pagina - Footer*/
